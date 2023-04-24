@@ -1,0 +1,38 @@
+@import-normalize;
+@import './variavies';
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 200vh;
+  background-image: linear-gradient($roxo, $roxo-claro);
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: $azul-escuro;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track{
+  background: linear-gradient($roxo, $azul-escuro);
+}
+
+@font-face {
+  font-family: "GandhiSansRegular";
+  src:  local("GandhiSansRegular"),
+  url("../assets/fontes/GandhiSans-Regular.otf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GandhiSansBold";
+  src:  local("GandhiSansBold"),
+  url("../assets/fontes/GandhiSans-Bold.otf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
